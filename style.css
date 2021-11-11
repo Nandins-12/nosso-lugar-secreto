@@ -95,11 +95,11 @@ header div.container nav ul li a.active div.border-bottom-button {
 }
 
 #square-cards div.square-card {
-    width: 425px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 25px;
+    margin-bottom: 20px;
 }
 
 #square-cards div.square-card p {
@@ -179,4 +179,28 @@ footer {
 
 footer p {
     color: #fff;
+}
+
+/* Media Queries -------------------------------- */
+
+@media (max-width: 845px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    header div.container nav {
+        display: none;
+    }
+
+    #square-cards {
+        flex-direction: column;
+    }
+
+    #about-here div.content-about div.box-about {
+        width: auto;
+    }
+
+    #about-here div.content-about img {
+        display: none;
+    }
 }
