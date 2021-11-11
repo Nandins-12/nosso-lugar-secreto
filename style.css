@@ -1,0 +1,133 @@
+/* Global -------------------------------- */
+
+:root {
+    --primary-red: #F11717;
+    --secondary-red: #E93232;
+    --font-red: #9F1313;
+    --banners-red: linear-gradient(90deg, #BD0000 13.13%, #D71B1B 68.85%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 100;
+    background: #f8f8f8;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--font-red);
+    font-size: 0.9em;
+}
+
+h2 {
+    color: var(--primary-red);
+    font-size: 1.6em;
+}
+
+.hr {
+    height: 4px;
+    background: var(--secondary-red);
+}
+
+/* Header -------------------------------- */
+header {
+    height: 60px;
+    background: var(--banners-red);
+}
+
+header div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div.container nav ul li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+header div.container nav ul li a {
+    color: #fff;
+    font-weight: 100;
+}
+
+header div.container nav ul li a div.border-bottom-button {
+    background: #fff;
+    height: 3px;
+    width: 0%;
+    transition: 0.3s;
+}
+
+header div.container nav ul li a:hover div.border-bottom-button {
+    width: 100%;
+}
+
+header div.container nav ul li a.active div.border-bottom-button {
+    width: 100%;
+}
+
+/* Square Cards -------------------------------- */
+
+#square-cards {
+    margin: 20px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 0 10px;
+}
+
+#square-cards div.square-card {
+    width: 425px;
+    height: 295px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+}
+
+#square-cards div.square-card p {
+    color: var(--primary-red);
+    font-size: 6em;
+}
+
+#square-cards div.square-card h3 {
+    color: var(--primary-red);
+}
+
+/* Area What -------------------------------- */
+#what-area {
+    margin: 20px 0 30px 0;
+}
+
+#what-area div.what-is-here {
+    background: #fff;
+    border: 1px solid #E93232;
+    padding: 20px 25px;
+    border-radius: 17px;
+}
+
+#what-area div.what-is-here h2 {
+    margin-bottom: 17px;
+}
+
+#what-area div.what-is-here p {
+    margin-bottom: 10px;
+}
