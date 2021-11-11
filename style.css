@@ -96,7 +96,6 @@ header div.container nav ul li a.active div.border-bottom-button {
 
 #square-cards div.square-card {
     width: 425px;
-    height: 295px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
@@ -130,4 +129,54 @@ header div.container nav ul li a.active div.border-bottom-button {
 
 #what-area div.what-is-here p {
     margin-bottom: 10px;
+}
+
+/* About Here -------------------------------- */
+#about-here {
+    margin-bottom: 60px;
+}
+
+#about-here h1 {
+    font-size: 4em;
+    color: var(--primary-red);
+    margin-bottom: 20px;
+}
+
+#about-here div.content-about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#about-here div.content-about div.box-about {
+    background: #fff;
+    padding: 16px 25px;
+    border-radius: 18px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 620px;
+    align-self: center;
+}
+
+#about-here div.content-about div.box-about h2 {
+    margin-bottom: 13px;
+}
+
+#about-here div.content-about div.box-about div {
+    background: #f9f9f9;
+    padding: 22px 17px;
+    border-radius: 44px;
+}
+
+/* Footer -------------------------------- */
+
+footer {
+    height: 80px;
+    background: var(--banners-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
 }
