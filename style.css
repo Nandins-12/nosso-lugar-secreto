@@ -89,7 +89,7 @@ header div.container nav ul li a.active div.border-bottom-button {
 #square-cards {
     margin: 20px 0 30px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: space-between;
     padding: 0 10px;
 }
