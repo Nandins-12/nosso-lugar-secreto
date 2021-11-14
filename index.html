@@ -31,7 +31,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/341d4ca1c0.js" crossorigin="anonymous"></script>
 
     <!--JavaScript-->
     <script src="index.js" defer></script>
@@ -42,9 +45,14 @@
 
     <header>
         <div class="container">
-            <a href="index.html">
-                <img src="assets/logo.png" alt="Nosso Lugar Secreto">
-            </a>
+            <div class="area-menu">
+                <a href="index.html" id="logo">
+                    <img src="assets/logo.png" alt="Nosso Lugar Secreto">
+                </a>
+                <button id="btn-mobile" onclick="toggle()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
 
             <nav>
                 <ul>
@@ -78,13 +86,13 @@
             
             <div class="square-card">
                 <h2>Estamos juntos a...</h3>
-                <p>153</p>
+                <p id="day-area"></p>
                 <h3>Days</h3>
             </div>
 
             <div class="square-card">
                 <h2>Tempo que eu te amo...</h3>
-                <p>3</p>
+                <p id="love-area"></p>
                 <h3>Years</h3>
             </div>
 
