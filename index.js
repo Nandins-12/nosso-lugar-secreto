@@ -14,5 +14,3 @@ function toggle() {
     document.body.classList.toggle('menu-compatibility')
     document.querySelector('#btn-mobile').classList.toggle('active')
 }
-
-const buttonMenu = document.querySelector('#btn-mobile')
