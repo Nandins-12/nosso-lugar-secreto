@@ -3,6 +3,7 @@ header {
     height: 60px;
     background: var(--banners-red);
     transition: 0.3s;
+    overflow: hidden;
 }
 
 header #logo img {
