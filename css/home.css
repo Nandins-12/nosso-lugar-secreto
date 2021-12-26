@@ -1,0 +1,239 @@
+/* Header -------------------------------- */
+header {
+    height: 160px;
+    background: var(--banners-red);
+    transition: 0.3s;
+}
+
+header #logo img {
+    width: 250px;
+}
+
+header div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+header div.container nav ul {
+    display: flex;
+}
+
+header div.container nav ul li a {
+    color: #fff;
+    font-weight: 100;
+    display: block;
+    padding: 20px 30px;
+}
+
+header div.container nav ul li a div.border-bottom-button {
+    background: #fff;
+    height: 3px;
+    width: 0%;
+    transition: 0.3s;
+}
+
+header div.container nav ul li a:hover div.border-bottom-button {
+    width: 100%;
+}
+
+header div.container nav ul li a.active div.border-bottom-button {
+    width: 100%;
+}
+
+/* Square Cards -------------------------------- */
+
+#square-cards {
+    margin: -80px 0 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    padding: 0 80px;
+}
+
+#square-cards div.square-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+#square-cards div.square-card p {
+    color: var(--primary-red);
+    font-size: 6em;
+}
+
+#square-cards div.square-card h3 {
+    color: var(--primary-red);
+}
+
+/* Area What -------------------------------- */
+#what-area {
+    margin: 20px 0 30px 0;
+}
+
+#what-area div.what-is-here {
+    background: #fff;
+    border: 1px solid #E93232;
+    padding: 20px 25px;
+    border-radius: 17px;
+}
+
+#what-area div.what-is-here h2 {
+    margin-bottom: 17px;
+}
+
+#what-area div.what-is-here p {
+    margin-bottom: 10px;
+}
+
+/* About Here -------------------------------- */
+#about-here {
+    margin-bottom: 60px;
+}
+
+#about-here h1 {
+    font-size: 4em;
+    color: var(--primary-red);
+    margin-bottom: 20px;
+}
+
+#about-here div.content-about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#about-here div.content-about div.box-about {
+    background: #fff;
+    padding: 16px 25px;
+    border-radius: 18px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 620px;
+    align-self: center;
+}
+
+#about-here div.content-about div.box-about h2 {
+    margin-bottom: 13px;
+}
+
+#about-here div.content-about div.box-about div {
+    background: #f9f9f9;
+    padding: 22px 17px;
+    border-radius: 44px;
+}
+
+/* Footer -------------------------------- */
+
+footer {
+    height: 80px;
+    background: var(--banners-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+/* Media Queries -------------------------------- */
+
+@media (max-width: 845px) {
+    /* Global -------------------------------- */
+    .container {
+        padding: 0 12px;
+    }
+
+    #btn-mobile {
+        display: inline-block;
+        padding: 6px 15px;
+        font-size: 1.2em;
+        border-radius: 8px;
+        background-color: var(--banners-red);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+        transition: 0.2s;
+    }
+
+    #btn-mobile:hover {
+        background-color: var(--secondary-red);
+    }
+
+    #btn-mobile.active {
+        background-color: var(--secondary-red);
+    }
+
+    /* Header -------------------------------- */
+    body.menu-compatibility header {
+        height: 300px;
+    }
+
+    header #logo {
+        padding: 10px 0;
+    }
+
+    header div.container {
+        display: block;
+    }
+
+    header div.container div.area-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header div.container nav {
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    header div.container nav ul {
+        display: block;
+    }
+    
+    header div.container nav.active {
+        opacity: 1;
+    }
+
+    header div.container nav ul li a div.border-bottom-button {
+        display: none;
+    }
+
+    header div.container nav ul li a {
+        padding: 10px 5px;
+        margin-bottom: 10px;
+        text-indent: 10px;
+        transition: 0.3s;
+        opacity: 0.8;
+    }
+
+    header div.container nav ul li a:hover,
+    header div.container nav ul li a.active {
+        font-size: 1.2em;
+        text-shadow: 2px 2px #000;
+        opacity: 1;
+    }
+
+    #logo img {
+        width: 200px;
+    }
+
+    /* Square Cards -------------------------------- */
+    #square-cards {
+        grid-template-columns: 1fr;
+        padding: 0 32px;
+    }
+
+    /* About Here -------------------------------- */
+    #about-here div.content-about div.box-about {
+        width: auto;
+    }
+
+    #about-here div.content-about img {
+        display: none;
+    }
+}
