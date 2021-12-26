@@ -39,7 +39,7 @@
     <script src="https://kit.fontawesome.com/341d4ca1c0.js" crossorigin="anonymous"></script>
 
     <!--JavaScript-->
-    <script src="scripts/btn-mobile.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 
     <title>Nosso Lugar secreto</title>
 </head>
@@ -72,29 +72,5 @@
             <p>Desenvolvido por Fernando Dias&copy;</p>
         </div>
     </main>
-
-    <script>
-
-        const button = document.querySelector('#exibir');
-        const input = document.querySelector('#password');
-        
-        button.addEventListener('click', function() {
-            console.log(input.getAttribute('type'))
-            switch (input.getAttribute('type')) {
-                case 'text':
-                    input.setAttribute('type', 'password');
-                    button.classList.replace('fa-eye-slash', 'fa-eye');
-                    break;
-                case 'password':
-                    input.setAttribute('type', 'text');
-                    button.classList.replace('fa-eye', 'fa-eye-slash');
-                break;
-            }
-        });
-
-        input.addEventListener('focus', function() {input.setAttribute('placeholder', '');})
-        input.addEventListener('blur', function() {input.setAttribute('placeholder', 'Digite a senha maneira!');})
-
-    </script>
 </body>
 </html>
