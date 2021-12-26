@@ -1,3 +1,4 @@
+<?php require_once('authentication.php')?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

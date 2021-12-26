@@ -42,7 +42,7 @@ i {
     background: rgba(0, 0, 0, 0);
     border: 0 none;
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 100;
     text-align: center;
 }
@@ -80,6 +80,12 @@ i {
 .button-submit button:hover {
     background: #fff;
     color: red;
+}
+
+.error {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
 .footer {

@@ -1,3 +1,13 @@
+<?php 
+
+    session_start();
+
+    if (isset($_SESSION['authenticated']) && $_SESSION['authenticated']) {
+        header('location: home.php');
+    } 
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -51,7 +61,7 @@
                 <img src="assets/logo.png" alt="Nosso Lugar Secreto">
             </div>
             <div class="password-form">
-                <form action="">
+                <form action="validate_login.php" method="post">
                     <div class="password">
                         <div>
                             <label for="password">
@@ -61,6 +71,28 @@
                         </div>
                         <i class="far fa-eye" id="exibir"></i>
                     </div>
+
+                    <?php
+                        if (isset($_GET['login'])) {
+                            switch($_GET['login']) {
+                                case 'error':                    
+                    ?>
+
+                    <p class="error">Senha incorreta!</p>
+
+                    <?php 
+                                break;
+                            case 'error2':
+                    ?>
+
+                    <p class="error">Digite a senha para acessar!</p>
+
+                    <?php 
+                                break;
+                            }
+                        }
+                    ?>
+
                     <div class="button-submit">
                         <button type="submit">Entrar</button>
                     </div>
