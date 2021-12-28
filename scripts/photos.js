@@ -127,3 +127,7 @@ setInterval(function() {
         }
     })
 }, 5500);
+
+document.querySelectorAll('.carrousel img').forEach((img, i) => {
+    img.addEventListener('click', function() {Modal.toggleModal(i)});
+});
