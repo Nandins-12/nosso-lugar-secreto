@@ -55,3 +55,17 @@ h2 {
 .d-none {
     display: none;
 }
+
+/* Footer -------------------------------- */
+footer {
+    height: 80px;
+    background: var(--banners-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.8em;
+}

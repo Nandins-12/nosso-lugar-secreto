@@ -1,0 +1,198 @@
+/* Header -------------------------------- */
+header {
+    height: 260px;
+    background: var(--banners-red);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+header #logo img {
+    width: 250px;
+}
+
+header div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+header div.container nav ul {
+    display: flex;
+}
+
+header div.container nav ul li a {
+    color: #fff;
+    font-weight: 100;
+    display: block;
+    padding: 20px 30px;
+}
+
+header div.container nav ul li a div.border-bottom-button {
+    background: #fff;
+    height: 3px;
+    width: 0%;
+    transition: 0.3s ease;
+}
+
+header div.container nav ul li a:hover div.border-bottom-button {
+    width: 100%;
+}
+
+header div.container nav ul li a.active div.border-bottom-button {
+    width: 100%;
+}
+
+/* Qualities ----------------------------------- */
+
+#qualities {
+    margin-top: -200px;
+}
+
+#qualities .title {
+    margin: 16px 0 30px;
+    background: var(--banners-red);
+    z-index: 9;
+}
+
+#qualities .title h1 {
+    font-size: 3.8em;
+    color: #fff;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#qualities .title .header {
+    display: flex;
+    align-items: center;
+}
+
+#qualities .title .header .bar {
+    top: 40px;
+    height: 3px;
+    background: rgba(255, 255, 255, 8);
+    max-width: 580px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+#qualities .title p {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* cards ------------ */
+
+.card {
+    background: #fff;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 19px;
+}
+
+.card h2 {
+    margin-bottom: 2px;
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+
+/* Media Queries -------------------------------- */
+@media (max-width: 845px) {
+    /* Global -------------------------------- */
+    .container {
+        padding: 0 12px;
+    }
+
+    #btn-mobile {
+        display: inline-block;
+        padding: 6px 15px;
+        font-size: 1.2em;
+        border-radius: 8px;
+        background-color: var(--banners-red);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+        transition: 0.2s;
+    }
+
+    #btn-mobile:hover {
+        background-color: var(--secondary-red);
+    }
+
+    #btn-mobile.active {
+        background-color: var(--secondary-red);
+    }
+
+    /* Header -------------------------------- */
+    header {
+        height: 300px;
+    }
+
+    body.menu-compatibility header {
+        height: 450px;
+    }
+
+    header #logo {
+        padding: 10px 0;
+    }
+
+    header div.container {
+        display: block;
+    }
+
+    header div.container div.area-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header div.container nav {
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    header div.container nav ul {
+        display: block;
+    }
+    
+    header div.container nav.active {
+        opacity: 1;
+    }
+
+    header div.container nav ul li a div.border-bottom-button {
+        display: none;
+    }
+
+    header div.container nav ul li a {
+        padding: 10px 5px;
+        margin-bottom: 10px;
+        text-indent: 10px;
+        transition: 0.3s;
+        opacity: 0.8;
+    }
+
+    header div.container nav ul li a:hover,
+    header div.container nav ul li a.active {
+        font-size: 1.2em;
+        text-shadow: 2px 2px #000;
+        opacity: 1;
+    }
+
+    #logo img {
+        width: 200px;
+    }
+
+    /* qualities -------------------- */
+    #qualities {
+        margin-top: -240px;
+    }
+
+    #qualities .title h1 {
+        font-size: 2.8em;
+    }
+}

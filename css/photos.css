@@ -138,13 +138,14 @@ header div.container nav ul li a.active div.border-bottom-button {
 }
 
 #photos .galeria .card-photo .card-content .card-content-text div {
-    margin-top: auto;
+    margin-top: 6px;
     display: flex;
     justify-content: flex-end;
 }
 
 #photos .galeria .card-photo .card-content .card-content-text div p {
     font-size: 0.8em;
+    color: var(--primary-red);
 }
 
 /* Modal -------------------------------- */
@@ -208,21 +209,6 @@ header div.container nav ul li a.active div.border-bottom-button {
     height: 500px;
     transition: 0.4s ease;
 }
-
-/* Footer -------------------------------- */
-footer {
-    height: 80px;
-    background: var(--banners-red);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer p {
-    color: #fff;
-    font-size: 0.8em;
-}
-
 
 /* Media Queries -------------------------------- */
 @media (max-width: 845px) {
