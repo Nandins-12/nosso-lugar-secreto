@@ -1,9 +1,6 @@
 /*Global -----------------------------*/
 body {
     background: radial-gradient(#ad0d0d 10.35%, #ff0404 78.77%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
     color: #fff;
 }
 
@@ -11,10 +8,24 @@ i {
     font-size: 1.3em;
 }
 
+main {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
 /*--------------------------------------------*/
 .container-password {
     width: 500px;
     margin: 0 auto;
+    display: none;
+    transition: 0.8s;
+}
+
+.container-password.active {
+    display: block;
 }
 
 .logo {
@@ -92,6 +103,39 @@ i {
     margin-bottom: 10px;
 }
 
+/* ---------------------------------- */
+.container-textinho {
+    margin: 0 auto;
+    padding: 0 15px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container-textinho.active {
+    opacity: 1;
+}
+
+.card-texto {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 600px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.card-texto p {
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.card-texto div {
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+
+/* -------------------------------- */
 .footer {
     margin-top: 50px;
     display: flex;
