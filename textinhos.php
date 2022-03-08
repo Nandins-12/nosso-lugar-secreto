@@ -37,8 +37,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style_textinhos.css">
+    <link rel="stylesheet" href="css/textinhos.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,9 +47,6 @@
 
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/341d4ca1c0.js" crossorigin="anonymous"></script>
-
-    <!--JavaScript-->
-    <script src="scripts/index.js" defer></script>
 
     <title>Nosso Lugar secreto</title>
 </head>
@@ -88,8 +85,13 @@
                     <p class="error">Digite a senha para acessar!</p>
 
                     <?php 
-                                break;
                             }
+                        } else {
+                    ?>
+
+                    <p class="error">ei ei, qual a senha manera?<br>(peça dica para o fernandins)</p>
+
+                    <?php                   
                         }
                     ?>
 

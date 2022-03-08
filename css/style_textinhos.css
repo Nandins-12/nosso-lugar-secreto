@@ -1,0 +1,57 @@
+/* Global -------------------------------- */
+
+:root {
+    --primary-red: #F11717;
+    --secondary-red: #E93232;
+    --font-red: #9F1313;
+    --banners-red: linear-gradient(90deg, #BD0000 20.13%, #f51e1e 68.85%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 100;
+    background: #f8f8f8;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 6px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--font-red);
+    font-size: 0.9em;
+}
+
+h2 {
+    color: var(--primary-red);
+    font-size: 1.6em;
+}
+
+.hr {
+    height: 4px;
+    background: var(--secondary-red);
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.d-none {
+    display: none;
+}

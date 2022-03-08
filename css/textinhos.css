@@ -1,0 +1,104 @@
+/*Global -----------------------------*/
+body {
+    background: radial-gradient(#ad0d0d 10.35%, #ff0404 78.77%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+i {
+    font-size: 1.3em;
+}
+
+/*--------------------------------------------*/
+.container-password {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.password-area {
+    margin-top: -100px;
+}
+
+.password {
+    margin: 20px 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.password div {
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #fff;
+}
+
+#password {
+    background: rgba(0, 0, 0, 0);
+    border: 0 none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 100;
+    text-align: center;
+}
+
+#password:focus {
+    border: 0 none;
+    outline: none;
+    caret-color: #fff;
+}
+
+#password::placeholder {
+    color: #fff;
+    font-size: 0.85em;
+}
+
+#password:focus::placeholder {
+    opacity: 0;
+}
+
+#exibir {
+    cursor: pointer;
+}
+
+.button-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.button-submit button {
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 50px;
+    font-size: 0.9em;
+    transition: 0.3s ease;
+}
+
+.button-submit button:hover {
+    background: #fff;
+    color: red;
+}
+
+.error {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    color: #fff;
+    opacity: 0.8;
+}
