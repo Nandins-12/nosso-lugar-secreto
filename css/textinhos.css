@@ -89,7 +89,7 @@ main {
     border-radius: 5px;
     padding: 10px 50px;
     font-size: 0.9em;
-    transition: 0.3s ease;
+    transition: 0.3s ease; 
 }
 
 .button-submit button:hover {
