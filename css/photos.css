@@ -210,6 +210,51 @@ header div.container nav ul li a.active div.border-bottom-button {
     transition: 0.4s ease;
 }
 
+/* Animations ----------------------------------- */
+main, footer {
+    display: none;
+}
+
+#animation_loading {
+    margin-bottom: calc(100vh - 159px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.circle {
+    width: 22px;
+    height: 22px;
+    background: rgb(197, 23, 23);
+    border-radius: 50%;
+    animation: loading 0.5s alternate infinite linear;
+}
+
+.circle:nth-child(2) {
+    margin: 0 8px;
+}
+
+@keyframes loading {
+    to {
+        width: 26px;
+        height: 26px;
+        background: red;
+    }
+}
+
+.circle:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.circle:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.circle2 {
+    margin: 0 10px;
+}
+
 /* Media Queries -------------------------------- */
 @media (max-width: 845px) {
     /* Global -------------------------------- */

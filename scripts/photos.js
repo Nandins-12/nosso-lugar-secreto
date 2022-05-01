@@ -131,3 +131,9 @@ setInterval(function() {
 document.querySelectorAll('.carrousel img').forEach((img, i) => {
     img.addEventListener('click', function() {Modal.toggleModal(i)});
 });
+
+window.addEventListener('load', () => {
+    document.querySelector('#animation_loading').style.display = 'none';
+    document.querySelector('main').style.display = 'block';
+    document.querySelector('footer').style.display = 'flex';
+});
