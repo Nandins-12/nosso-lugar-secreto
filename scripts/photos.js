@@ -135,5 +135,5 @@ document.querySelectorAll('.carrousel img').forEach((img, i) => {
 window.addEventListener('load', () => {
     document.querySelector('#animation_loading').style.display = 'none';
     document.querySelector('main').style.display = 'block';
-    document.querySelector('footer').style.display = 'block';
+    document.querySelector('footer').style.display = 'flex';
 });
